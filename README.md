@@ -7,6 +7,12 @@ Traditional commercial instruments offering these features are expensive, while 
 
 ---
 
+## Download the Code
+
+View or download the code here: [SpectrumAnalyzer_THD.ino](https://github.com/psdaphadar/SpectrumAnalyzer_THD/blob/main/SpectrumAnalyzer_THD.ino)
+
+---
+
 ## System Features
 - **Real-time FFT spectrum display** up to 9th harmonic  
 - **THD calculation** with smoothing for accurate readings  
@@ -124,3 +130,4 @@ You use this software at your own risk.
 The author shall not be liable for any damages, losses, or problems arising from its use, including hardware damage, data loss, or personal injury  
 
 **BY USING, COPYING, MODIFYING, OR DISTRIBUTING THIS SOFTWARE, YOU AGREE TO THESE TERMS.**
+
