@@ -1,5 +1,7 @@
 ﻿# Low-Cost Spectrum Analyzer cum THD Meter Using ATmega328P
 
+This non-commercial educational project demonstrates a low-cost spectrum analyzer and total harmonic distortion (THD) meter built around an ATmega328P microcontroller. It performs real-time FFT, harmonic detection, and THD calculation on a small OLED display, providing a practical and affordable tool for educational use.
+
 ## Overview
 This project presents a **low-cost, standalone spectrum analyzer and THD meter** built using an **ATmega328P microcontroller**. It performs **real-time FFT-based spectrum visualization, harmonic identification up to the 9th order, and THD measurement**, all on a compact OLED display.  
 
@@ -45,7 +47,8 @@ The system consists of **two main blocks**:
 
 ## Circuit Description
 - Input waveform is **DC-coupled** and biased to mid-rail (~2.5V)  
-- **AGC Stage:** VTL5C1 optocoupler + LM358 op-amps to maintain ~4Vpp amplitude  
+- **AGC Stage:** VTL5C1 optocoupler + LM358 op-amps to maintain ~4Vpp amplitude
+- **However, it is recommended that the input signal should be 3–4 V(peak-to-peak). For best operation, the DC offset voltage should be kept zero or at least slightly positive (<0.2 V).** 
 - Separate **peak-detector (A0)** and **RC averaging (A2)** ensure accurate amplitude and DC measurement  
 - OLED display connected via **I²C (A4–A5)**, displaying harmonic bars, frequency, THD, and DC simultaneously  
 - **16 MHz crystal** ensures precise timing  
@@ -130,4 +133,5 @@ You use this software at your own risk.
 The author shall not be liable for any damages, losses, or problems arising from its use, including hardware damage, data loss, or personal injury  
 
 **BY USING, COPYING, MODIFYING, OR DISTRIBUTING THIS SOFTWARE, YOU AGREE TO THESE TERMS.**
+
 
